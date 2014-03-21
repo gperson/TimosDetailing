@@ -1,3 +1,4 @@
+body { margin: 0; }
 #page_wrapper { margin: 0px auto; }
 #page_wrapper, #header, #footer, #main_section { width: 1024px; }
 #header, #footer, #main_section { float: left; }

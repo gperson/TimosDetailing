@@ -1,2 +1,4 @@
+body { padding: 5px; }
 #page_wrapper, #header, #footer, #main_section { width: 100%; }
+#page_content { width: 100%; }
 .mobileOnly { display: block; }
