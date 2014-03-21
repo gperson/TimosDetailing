@@ -19,29 +19,51 @@
 	<meta name=”twitter:image” content=”[imageUrlHere]”>
 	<meta name=”twitter:description” content=”Twitter Description Here”>
 	
-	<!-- Styling Links -->
+	<!-- Mobile Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	
+	<!-- Styling Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="./css/common.css">
 	<link rel="stylesheet" type="text/css" href="./css/header.css">
 	<link rel="stylesheet" type="text/css" href="./css/footer.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	
+	<!-- Device Stylesheets -->
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/common.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/header.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/footer.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/index.css">
+	
+	<!-- Icon -->
+	<link rel="shortcut icon" href="[{myIconUrl}.ico]">
 </head>
 <body>
 	<div id="page_wrapper">
 		<!-- Start Header Content -->
 		<div id="header">
-		
+			Header
 		</div>
 		<!-- End Header Content -->
 		
 		<!-- Start Main Display Content -->
 		<div id="main_section">
-		
+			<span class="page_shadow"></span>
+			<div id="page_content">
+				<!-- Start Content -->
+				Main Content
+				<!-- End Content -->
+				
+				<!-- To demonstrate mobile device css functionality -->
+				<div id="isMobileDevice" class="mobileOnly">Mobile Device Detected</div>
+				
+			</div>
+			<span class="page_shadow"></span>
 		</div>
 		<!-- End Main Display Content -->
 		
 		<!-- Start Footer Content -->
 		<div id="footer">
-		
+			Footer
 		</div>
 		<!-- End Footer Content -->
 	</div>

@@ -1,0 +1,7 @@
+#page_wrapper { margin: 0px auto; }
+#page_wrapper, #header, #footer, #main_section { width: 1024px; }
+#header, #footer, #main_section { float: left; }
+#page_content { width: 1000px; float:left; }
+#main_section .page_shadow { float: left; width: 12px; min-height: 1px; }
+#isMobileDevice { float: left; background-color: red; color: white; width: 100%;}
+.mobileOnly { display: none; }
