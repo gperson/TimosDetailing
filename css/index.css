@@ -41,13 +41,13 @@ a {
 #header,#footer,#main_section {
 	float: left;
 }
-
-#main_section .page_shadow {
+#main_section { 
+	box-shadow: 0px 0px 10px #888888;
+	width: 98%;
 	float: left;
-	width: 12px;
-	min-height: 1px;
+	margin-left: 1%;
+	margin-right: 1%;
 }
-
 #isMobileDevice {
 	float: left;
 	background-color: red;
@@ -59,24 +59,21 @@ a {
 	display: none;
 }
 
-#page_content,#nav {
-	width: 98%;
+#page_content {
 	float: left;
-	border-width: 2px;
-	border-right-style: solid;
-	border-left-style: solid;
-	margin-left: 1%;
-	margin-right: 1%;
-	box-shadow: 0px 0px 10px #888888;
 }
 
 #nav {
-	border-bottom-style: solid;
+	float: left; width: 100%; border-bottom-style: solid;
 }
-
-.navItem {
+#nav .navItem {
 	float: left;
 	margin: auto;
 	width: 33%;
 	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+#nav .navItem :first-child {
+	width: 34%;
 }
