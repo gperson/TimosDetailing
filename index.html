@@ -1,72 +1,107 @@
 <html>
 <head>
-	<!-- Standard Meta Tags -->
-	<title>Tim O's Detailing</title>
-	<meta name="description" content="General Description Here. 150-160 characters">
-	<meta name="author" content="Tony Lopez, Grant Person">
-	<meta charset="UTF-8">
-	
-	<!-- Social Media Meta Tags -->
-	<meta property=”og:title” content=”Tim O's Detailing”/>
-	<meta property=”og:type” content="website"/>
-	<meta property=”og:url” content=”http://www.timosdetailing.com/”/>
-	<meta property=”og:image” content=”[imageUrlHere]”/>
-	<meta property=”og:description” content=”Facebook Description Here”/>
-	
-	<meta name=”twitter:card” content=”summary”>
-	<meta name=”twitter:title” content=”Tim O's Detailing”>
-	<meta name=”twitter:url” content=”http://www.timosdetailing.com/”>
-	<meta name=”twitter:image” content=”[imageUrlHere]”>
-	<meta name=”twitter:description” content=”Twitter Description Here”>
-	
-	<!-- Mobile Meta Tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	
-	<!-- Styling Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="./css/common.css">
-	<link rel="stylesheet" type="text/css" href="./css/header.css">
-	<link rel="stylesheet" type="text/css" href="./css/footer.css">
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
-	
-	<!-- Device Stylesheets -->
-	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/common.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/header.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/footer.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" href="./css/mobile/index.css">
-	
-	<!-- Icon -->
-	<link rel="shortcut icon" href="[{myIconUrl}.ico]">
+<!-- Standard Meta Tags -->
+<title>Tim O's Detailing</title>
+
+<meta name="description"
+	content="General Description Here. 150-160 characters">
+<meta name="author" content="Tony Lopez, Grant Person">
+<meta charset="UTF-8">
+
+<!-- Social Media Meta Tags -->
+<meta property=”og:title” content=”Tim O's Detailing”/>
+<meta property=”og:type” content="website" />
+<meta property=”og:url” content=”http://www.timosdetailing.com/” />
+<meta property=”og:image” content=”[imageUrlHere]” />
+<meta property=”og:description” content=”Facebook Description Here”/>
+
+<meta name=”twitter:card” content=”summary”>
+<meta name=”twitter:title” content=”TimO'sDetailing”>
+<meta name=”twitter:url” content=”http://www.timosdetailing.com/”>
+<meta name=”twitter:image” content=”[imageUrlHere]”>
+<meta name=”twitter:description” content=”TwitterDescriptionHere”>
+
+<!-- Mobile Meta Tags -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<!-- Styling Stylesheets -->
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/header.css">
+<link rel="stylesheet" type="text/css" href="./css/footer.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+
+<!-- Device Stylesheets -->
+<link rel="stylesheet" type="text/css"
+	media="only screen and (max-width: 640px)"
+	href="./css/mobile/common.css">
+<link rel="stylesheet" type="text/css"
+	media="only screen and (max-width: 640px)"
+	href="./css/mobile/header.css">
+<link rel="stylesheet" type="text/css"
+	media="only screen and (max-width: 640px)"
+	href="./css/mobile/footer.css">
+<link rel="stylesheet" type="text/css"
+	media="only screen and (max-width: 640px)"
+	href="./css/mobile/index.css">
+
+<!-- Icon -->
+<link rel="shortcut icon" href="[{myIconUrl}.ico]">
 </head>
 <body>
 	<div id="page_wrapper">
 		<!-- Start Header Content -->
 		<div id="header">
-			Header
+			<img id="timosImage" src="">
+			<div id="title_wrapper">
+				<div id="timos">
+					<h1>Timos</h1>
+				</div>
+				<div id="detailing">
+					<h1>Detailing</h1>
+				</div>
+			</div>
 		</div>
 		<!-- End Header Content -->
-		
+
 		<!-- Start Main Display Content -->
 		<div id="main_section">
-			<span class="page_shadow"></span>
+			<!-- Navigation Menu -->
+			<nav id="nav">
+				<a class="navItem" href=""><span>Location</span></a> <a
+					class="navItem" href=""><span>About</span></a> <a class="navItem"
+					href=""><span>Contact Us</span></a>
+			</nav>
+			<!-- End Navigation menu -->
 			<div id="page_content">
 				<!-- Start Content -->
-				Main Content
+				<div id="mainInfo">
+					<h3>Info</h3>
+					<p>Auto detailing (British English: Car valeting), is the
+						performance of an extremely thorough cleaning, polishing and
+						waxing of an automobile, both inside and out, to produce a
+						show-quality level of detail. Besides improving appearance,
+						detailing helps to preserve resale value of a car.</p>
+					<p>Today, the United States has more than 50,000 detailers in
+						operation. Some are franchises of national auto detailing chains.
+						Many auto detailing services can also help enhance the visual
+						aspects of a vehicle before a car show.</p>
+				</div>
+				<hr width="100%" color="#000000">
+				<!-- Start Slide show-->
+				<!-- End slide show -->
 				<!-- End Content -->
-				
 				<!-- To demonstrate mobile device css functionality -->
-				<div id="isMobileDevice" class="mobileOnly">Mobile Device Detected</div>
-				
+				<div id="isMobileDevice" class="mobileOnly">Mobile Device
+					Detected</div>
 			</div>
-			<span class="page_shadow"></span>
+
+			<!-- End Main Display Content -->
+
+			<!-- Start Footer Content -->
+			<div id="footer">Footer</div>
+			<!-- End Footer Content -->
 		</div>
-		<!-- End Main Display Content -->
-		
-		<!-- Start Footer Content -->
-		<div id="footer">
-			Footer
-		</div>
-		<!-- End Footer Content -->
-	</div>
 </body>
 
 <!-- Scripts -->
@@ -75,4 +110,5 @@
 <script src="./js/header.js"></script>
 <script src="./js/footer.js"></script>
 <script src="./js/index.js"></script>
+
 </html>
