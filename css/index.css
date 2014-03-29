@@ -12,12 +12,12 @@ h1 {
 }
 
 h3 {
-	padding: 10px 40px 4px 40px;
-	margin: 0;
+	padding: 4px 0px 4px 0px;
+	margin: 0
 }
 
 p {
-	padding: 4px 40px 4px 40px;
+	padding: 4px 0px 4px 0px;
 	margin: 0
 }
 
@@ -46,6 +46,10 @@ a {
 	float: left;
 	width: 12px;
 	min-height: 1px;
+}
+
+#mainInfo{
+	padding: 40px 40px 40px 40px;
 }
 
 #isMobileDevice {
@@ -79,4 +83,32 @@ a {
 	margin: auto;
 	width: 33%;
 	text-align: center;
+}
+
+#slider{
+	overflow:hidden;
+}
+
+#slider-content {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.slide{
+	float:left;
+}
+
+#slider-content div img{
+	float: left;
+	width: 44%;
+	padding: 40px 20px 40px 40px;
+}
+
+#slider-content div div{
+	float: left;
+	width: 44%;
+	padding: 40px 40px 40px 20px;
 }
