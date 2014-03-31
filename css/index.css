@@ -91,7 +91,7 @@ a {
 #slider-content div div {
 	float: left;
 	width: 44%;
-	padding: 40px 40px 40px 20px;
+	padding: 40px 40px 20px 20px;
 }
 
 #slider {
@@ -99,15 +99,10 @@ a {
 }
 
 #slider-content {
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
 	position: relative;
 }
 
-.slide {
+#slider-content .slide {
 	float: left;
 	position: relative;
 }
@@ -115,5 +110,17 @@ a {
 #slider-content div img {
 	float: left;
 	width: 44%;
-	padding: 40px 20px 40px 40px;
+	padding: 40px 20px 20px 40px;
+}
+
+#slide_show_nav{
+	float:left;
+	padding: 10px 45% 20px 45%;
+}
+
+#slide_show_nav img{
+	width: 30px;
+	height: 30px;
+	background-color: grey;
+	float: left;
 }
