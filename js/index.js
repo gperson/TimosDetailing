@@ -9,7 +9,7 @@ $(document).ready(function() {
 	//All code
 	var slider = document.getElementById('slider-content'); 
 	sliders = slider.children;
-	numSlides = sliders.length; //No of items in the above array
+	numSlides = sliders.length; 
 	
 	sliderContent = document.getElementById('slider-content'); //#slider-content
 	sliderContent.style.width = (numSlides * 100) + "%";
@@ -19,9 +19,21 @@ $(document).ready(function() {
 	{ 
 		sliders[i].style.width = width;
 	}
-	setInterval(function (){slide()}, 5000);
+	var distance = (slider.offsetWidth/numSlides);
+	setInterval(function (){slide(distance,slider.offsetWidth)}, 10000);
 });
 
-function slide() {
-    $("#slider").animate({ "left": "-=50px" }, "slow" );
+function slide(distance,maxMoveTotal) {
+	var slider = document.getElementById('slider-content');
+	var currentPosition = slider.style.left;
+	var currentLeft = (currentPosition.replace("px", ""));
+	if(currentLeft == null || currentLeft == ""){
+		currentLeft = 0;
+	}
+	
+	var left = 0;
+	if((Math.abs(parseFloat(currentLeft))+.3) < (parseFloat(maxMoveTotal) - parseFloat(distance))){
+		left = (parseFloat(currentLeft) + (-distance));
+	}
+	$("#slider-content").animate({ "left": left }, "slow" );
 }
