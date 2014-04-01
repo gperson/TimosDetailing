@@ -4,7 +4,7 @@ html * {
 
 body {
 	margin: 0;
-	background-color: #D8D8D2;
+	background-color: #F1F1F1;
 }
 
 h1 {
@@ -33,7 +33,6 @@ a {
 #page_wrapper {
 	margin: 0px auto;
 }
-
 #page_wrapper,#header,#footer,#main_section {
 	width: 1024px;
 }
@@ -48,6 +47,8 @@ a {
 	float: left;
 	margin-left: 1%;
 	margin-right: 1%;
+	margin-top: 25px;
+	background-color: #D8D8D2;
 }
 
 #mainInfo {
@@ -72,21 +73,21 @@ a {
 #nav {
 	float: left;
 	width: 100%;
-	border-bottom-style: solid;
+	background-color: #5A5A5A;
+	color: #fff;
 }
-
-#nav .navItem {
+#nav a.navItem.firstItem {
+	width: 341px;
+}
+#nav a.navItem {
 	float: left;
 	margin: auto;
-	width: 33%;
+	width: 331px;
 	text-align: center;
 	height: 50px;
 	line-height: 50px;
 }
-
-#nav .navItem :first-child {
-	width: 34%;
-}
+#nav a.navItem:hover { color: #000; background-color: #D8D8D2; }
 
 #slider-content div div {
 	float: left;
