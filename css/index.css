@@ -7,65 +7,40 @@ body {
 	background-color: #F1F1F1;
 }
 
-h1 {
+h1, h3, p {
 	margin: 0;
+	padding: 0;
 }
-
-h3 {
-	padding: 4px 0px 4px 0px;
-	margin: 0
-}
-
-p {
-	padding: 4px 0px 4px 0px;
-	margin: 0
-}
-
-hr {
-	box-shadow: 0px 0px 10px #888888;
-}
-
 a {
 	color: inherit;
 	text-decoration: inherit;
 }
-
 #page_wrapper {
 	margin: 0px auto;
 }
 #page_wrapper,#header,#footer,#main_section {
 	width: 1024px;
 }
-
 #header,#footer,#main_section {
 	float: left;
 }
-
 #main_section {
 	box-shadow: 0px 0px 10px #888888;
-	width: 98%;
+	width: 1004px;
 	float: left;
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-top: 25px;
+	margin: 25px 10px;
 	background-color: #D8D8D2;
 }
-
-#mainInfo {
-	padding: 40px 40px 40px 40px;
-}
-
 #isMobileDevice {
 	float: left;
 	background-color: red;
 	color: white;
 	width: 100%;
 }
-
 .mobileOnly {
 	display: none;
 }
-
+#page_content .navTab { float: left; }
 #page_content {
 	float: left;
 }
@@ -76,26 +51,23 @@ a {
 	background-color: #5A5A5A;
 	color: #fff;
 }
-#nav a.navItem.firstItem {
-	width: 341px;
-}
 #nav a.navItem {
 	float: left;
 	margin: auto;
-	width: 331px;
+	width: 251px;
 	text-align: center;
 	height: 50px;
 	line-height: 50px;
 }
-#nav a.navItem:hover { color: #000; background-color: #D8D8D2; }
-
-#slider-content div div {
-	float: left;
-	width: 44%;
-	padding: 40px 40px 20px 20px;
-}
-
+#nav a.navItem:hover { color: #000; background-color: #C9C9C9; }
+#nav a.navItem.selected { color: #000; background-color: #D8D8D2; }
+#page_content .navTab { padding: 40px; }
+#page_content .navTab .textDisplay { float: left; margin-bottom: 40px; width: 100%; }
+#page_content .navTab .textDisplay h3, #page_content .navTab .textDisplay p { margin-bottom: 10px; }
+#slider-content .displayText { float: left; width: 377px; padding: 40px; }
+#slider-content .displayText h3, #slider-content .displayText p { float: left; }
 #slider {
+	float: left;
 	overflow: hidden;
 }
 
@@ -110,8 +82,8 @@ a {
 
 #slider-content div img {
 	float: left;
-	width: 44%;
-	padding: 40px 20px 20px 40px;
+	width: 467px;
+	height: 365px;
 }
 
 #slide_show_nav{
@@ -125,3 +97,15 @@ a {
 	background-color: grey;
 	float: left;
 }
+/* About Styles */
+#aboutStaff { float: left; }
+#aboutStaff p { margin-bottom: 10px; }
+#aboutStaff p.intro { margin-bottom: 50px; }
+#aboutStaff .staff_card { float: left; margin-left: 40px; margin-bottom: 40px; }
+#aboutStaff .staff_card h3{ float: left; width: 100%; margin-bottom: 5px; }
+#aboutStaff .staff_card.even h3{ text-align: right; }
+#aboutStaff .staff_card.even img.profile { float: right; }
+#aboutStaff .staff_card.even .aboutSection { float: right; }
+#aboutStaff .staff_card img.profile{ float: left; width: 200px; }
+#aboutStaff .staff_card .aboutSection{ float: left; width: 644px; padding: 20px;}
+/* End About Styles */

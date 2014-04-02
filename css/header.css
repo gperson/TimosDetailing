@@ -2,18 +2,10 @@
 	background-color: #000000;
 	height: 125px;
 	width: 100%;
-	overflow: hidden;
+	position: relative;
 }
-#header .headerCarImage { width: 310px; height: 121px; margin-top: 25px; float: left; }
-#title_wrapper{
-	float:left;
-	width: 714px;
-	height: 121px;
-}
-#timos{
-	position: absolute;	
-}
-#detailing{
-	position: absolute;
-	top: 62;
-}
+#header .headerCarImage { width: 310px; height: 121px; margin-top: 25px; float: left; z-index: 1; }
+#header .title_wrapper { position: absolute; width: 100%; height: 100%; overflow: hidden; }
+#header .title_wrapper .image_timos{ position: absolute; right: -198; }
+#header .title_wrapper .image_detailing{ position: absolute; left: -215; top: 62; }
+#header .us_states_flag { float: right; }
