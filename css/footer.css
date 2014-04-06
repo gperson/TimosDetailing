@@ -2,6 +2,27 @@
 	background-color: #5A5A5A;
 	float: left;
 	text-align: center;
-	padding: 20px 0;
+	padding: 10px 0px 0px 0px;
 	font-size: 10px;
+}
+
+#footer .copyright {
+	padding-right: 75px;
+}
+
+#footer .social_Media{
+	width: 25px;
+	height: 25px;
+}
+
+#social_media_icons{
+	float: right;
+	padding-right: 10px;
+	padding-top: 18px;
+	margin-top: -25px;
+}
+
+#created_by{
+	float: left;
+	padding-left: 10px;
 }
